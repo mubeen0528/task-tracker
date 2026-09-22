@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="task-panel" aria-labelledby="app-title">
+      <header class="app-header">
+        <h1 id="app-title">Task Tracker</h1>
+      </header>
+
+      <form class="task-form">
+        <label for="task-input">New task</label>
+        <div class="input-row">
+          <input
+            id="task-input"
+            type="text"
+            name="task"
+            placeholder="Enter a task"
+            autocomplete="off"
+          >
+          <button type="button">Add Task</button>
+        </div>
+      </form>
+
+      <section class="task-list" aria-label="Task list">
+        <p class="empty-state">No tasks yet.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -109,6 +109,31 @@ button:focus {
   color: var(--muted);
 }
 
+.validation-message {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.875rem;
+}
+
+.task-items {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task-items li {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  overflow-wrap: anywhere;
+}
+
+.task-items li + li {
+  margin-top: 10px;
+}
+
 @media (max-width: 520px) {
   .app {
     padding: 16px;

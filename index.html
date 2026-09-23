@@ -22,13 +22,16 @@
             name="task"
             placeholder="Enter a task"
             autocomplete="off"
+            aria-describedby="task-error"
           >
-          <button type="button">Add Task</button>
+          <button type="submit">Add Task</button>
         </div>
+        <p id="task-error" class="validation-message" role="alert" hidden></p>
       </form>
 
       <section class="task-list" aria-label="Task list">
         <p class="empty-state">No tasks yet.</p>
+        <ul class="task-items" hidden></ul>
       </section>
     </section>
   </main>
